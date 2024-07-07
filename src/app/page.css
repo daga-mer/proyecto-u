@@ -1,0 +1,42 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #7a97e5c7;
+}
+
+.formLogin {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  background-color: #3b58a75c;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: inset;
+  -webkit-box-shadow: 10px 10px 32px -4px #00000062;
+  -moz-box-shadow: 10px 10px 32px -4px #00000062;
+  box-shadow: 10px 10px 32px -4px #00000062;
+}
+
+.formLogin label, .buttonLogin {
+  margin-top: 0.5rem;
+}
+
+.buttonLogin {
+  background-color: #b0c5fd;
+  width: fit-content;
+  border: 1px #b0c5fd solid;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+input {
+  border: 1px #969696 solid;
+  padding: 0.3rem 0.5rem;
+  border-radius: 1rem;
+}
