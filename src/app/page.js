@@ -36,25 +36,29 @@ export default function Home() {
     }} className="formLogin">
       <h1>Log in</h1>
 
-      <label htmlFor="UserName">UserName: </label>
-      <input name="UserName" id="UserName" type="text" value={userName} onChange={(e)=>{
-        setUserName(e.target.value)
-        if (e.target.value.length == 0) {
-          setMessage("UserName debe ser mayor a 0")
-          return ""
-        }
-        setMessage("")
-      }} />
-
-      <label htmlFor="Password">Password: </label>
-      <input name="Password" id="Password" type="password" value={password} onChange={(e)=>{
-        setPassword(e.target.value)
-        if (e.target.value.length == 0) {
-          setMessage("Password debe ser mayor a 0")
-          return ""
-        }
-        setMessage("")
-      }} />
+      <div style={{ display: "flex", flexDirection: "column", alignItems: "center", background: "red", color: "white", width: "100%" }}>
+        <label htmlFor="UserName">UserName: </label>
+        <input name="UserName" id="UserName" type="text" value={userName} onChange={(e)=>{
+          setUserName(e.target.value)
+          if (e.target.value.length == 0) {
+            setMessage("UserName debe ser mayor a 0")
+            return ""
+          }
+          setMessage("")
+        }} />
+      </div>
+      <div className="center-line"></div>
+      <div style={{ display: "flex", flexDirection: "column", alignItems: "center", background: "white", color: "black", width: "100%" }}>
+        <label htmlFor="Password">Password: </label>
+        <input name="Password" id="Password" type="password" value={password} onChange={(e)=>{
+          setPassword(e.target.value)
+          if (e.target.value.length == 0) {
+            setMessage("Password debe ser mayor a 0")
+            return ""
+          }
+          setMessage("")
+        }} />
+      </div>
 
       {
         message.length > 0 && <div style={{ margin: "0.5rem", color: "red", background: "#fff", padding: "0.5rem", borderRadius: "1rem" }}>

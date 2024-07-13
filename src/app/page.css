@@ -5,7 +5,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #7a97e5c7;
+  background: -webkit-linear-gradient(90deg, #e6de00, #0038a8, #ffffff);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(90deg, #e6de00, #0038a8, #ffffff);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .formLogin {
@@ -13,8 +16,7 @@ body {
   flex-direction: column;
   text-align: center;
   align-items: center;
-  background-color: #3b58a75c;
-  padding: 1rem;
+  background-color: #ffffff;
   border-radius: 1rem;
   box-shadow: inset;
   -webkit-box-shadow: 10px 10px 32px -4px #00000062;
@@ -22,21 +24,43 @@ body {
   box-shadow: 10px 10px 32px -4px #00000062;
 }
 
-.formLogin label, .buttonLogin {
+.formLogin label {
   margin-top: 0.5rem;
 }
 
 .buttonLogin {
-  background-color: #b0c5fd;
-  width: fit-content;
-  border: 1px #b0c5fd solid;
+  background-color: #ffffff;
+  width: 100%;
+  border: 1px #ffffff solid;
+  color: #000000;
   padding: 0.5rem 1rem;
-  border-radius: 1rem;
   cursor: pointer;
+  border-end-end-radius: 1rem;
+  border-end-start-radius: 1rem;
 }
 
 input {
   border: 1px #969696 solid;
   padding: 0.3rem 0.5rem;
   border-radius: 1rem;
+  margin: 1rem;
+}
+
+h1 {
+  width: 100%;
+  margin: 0;
+  background-color: #ff0000;
+  color: #ffffff;
+  border-start-end-radius: 1rem;
+  border-start-start-radius: 1rem;
+}
+
+
+.center-line {
+  position: absolute;
+  top: 50%;
+  width: 16%;
+  height: 10px;
+  background: #000;
+  transform: translateY(-50%);
 }
