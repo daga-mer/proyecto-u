@@ -24,7 +24,7 @@ export default function Home() {
       setLoading(true)
       setTimeout(function () {
         let user = dataUsers.filter(compareData);
-        console.log("user: ", user);
+        console.log("user: ", user, user.length);
         if (user.length == 0) {
           setMessage("UserName o Password incorrectos intente otra vez.")
         } else {
